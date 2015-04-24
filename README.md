@@ -8,9 +8,9 @@ It's using vagrant and ansible to setup following envs
 - git
 - oracle-jdk7
 - ant
-- apt: name=x11-common state=present
-- apt: name=libxi6 state=present
-- apt: name=libgconf-2-4 state=present
+- x11-common
+- libxi6
+- libgconf-2-4
 
 Make sure you already get vagrant and ansible ready on your machine
 
