@@ -11,4 +11,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         ansible.extra_vars = { ansible_ssh_user: 'vagrant' }
     end
     config.ssh.forward_x11 = true
+    config.vm.synced_folder "repo/", "/home/vagrant/repo"
 end
