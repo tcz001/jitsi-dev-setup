@@ -30,7 +30,7 @@ or if you want to use your own box, just copy the playbook.yml to your path and 
 vagrant provision
 ```
 
-when finished you can just `vagrant ssh` and clone the repo at `git@github.com:jitsi/jitsi.git`
+when finished you can just `vagrant ssh` and clone the repo at `https://github.com/jitsi/jitsi.git`
 
 run ant to build and run
 
