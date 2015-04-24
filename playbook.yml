@@ -1,0 +1,20 @@
+---
+
+- name: install necessary env and libs for jitsi dev
+  hosts: all
+  sudo: yes
+  vars:
+  roles:
+    - { role: laggyluke.git,
+        oracle_jdk_java_versions: [7],
+        oracle_jdk_java_version_default: 7
+      }
+    - { role: ANXS.oracle-jdk }
+    - { role: tcz001.jitsi }
+#  tasks:
+#    - name: Download Apache Ant
+#      get_url: url=http://mirror.cc.columbia.edu/pub/software/apache//ant/binaries/apache-ant-1.9.4-bin.tar.bz2 dest=/tmp/apache-ant-1.9.4-bin.tar.bz2
+#    - name: Untar Ant
+#      shell: chdir=/tmp creates=/opt/apache-ant-1.9.4 tar -jxf apache-ant-1.9.4-bin.tar.bz2 -C /opt
+#    - lineinfile: dest=/etc/profile regexp='^#?\s*export ANT_HOME=(.*)$' line='export ANT_HOME=/opt/apache-ant-1.9.4' state=present
+#    - lineinfile: dest=/etc/profile regexp='^#?\s*export PATH=(.*)ANT_HOME(.*)$' line="export PATH=$PATH:$ANT_HOME/bin" state=present

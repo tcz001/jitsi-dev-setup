@@ -1,0 +1,3 @@
+laggyluke.git
+ANXS.oracle-jdk
+tcz001.jitsi
